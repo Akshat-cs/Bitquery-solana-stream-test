@@ -1,0 +1,60 @@
+python stream_compare.py
+Stream connected. Collecting Solana DEXTrades. Press Ctrl+C to stop.
+
+^CStream closed.
+
+Query time range: since=2026-02-13T10:47:33Z till=2026-02-13T11:18:05Z (UTC)
+Loading stream trades for comparison...
+Stream trades loaded: 929330
+  Query offset 0: got 25000 trades (total query so far: 25000, mismatches: 0, boundary excluded: 205)
+  Query offset 25000: got 25000 trades (total query so far: 50000, mismatches: 0, boundary excluded: 205)
+  Query offset 50000: got 25000 trades (total query so far: 75000, mismatches: 0, boundary excluded: 205)
+  Query offset 75000: got 25000 trades (total query so far: 100000, mismatches: 0, boundary excluded: 205)
+  Query offset 100000: got 25000 trades (total query so far: 125000, mismatches: 0, boundary excluded: 205)
+  Query offset 125000: got 25000 trades (total query so far: 150000, mismatches: 0, boundary excluded: 205)
+  Query offset 150000: got 25000 trades (total query so far: 175000, mismatches: 0, boundary excluded: 205)
+  Query offset 175000: got 25000 trades (total query so far: 200000, mismatches: 0, boundary excluded: 205)
+  Query offset 200000: got 25000 trades (total query so far: 225000, mismatches: 0, boundary excluded: 205)
+  Query offset 225000: got 25000 trades (total query so far: 250000, mismatches: 0, boundary excluded: 205)
+  Query offset 250000: got 25000 trades (total query so far: 275000, mismatches: 0, boundary excluded: 205)
+  Query offset 275000: got 25000 trades (total query so far: 300000, mismatches: 0, boundary excluded: 205)
+  Query offset 300000: got 25000 trades (total query so far: 325000, mismatches: 0, boundary excluded: 205)
+  Query offset 325000: got 25000 trades (total query so far: 350000, mismatches: 0, boundary excluded: 205)
+  Query offset 350000: got 25000 trades (total query so far: 375000, mismatches: 0, boundary excluded: 205)
+  Query offset 375000: got 25000 trades (total query so far: 400000, mismatches: 0, boundary excluded: 205)
+  Query offset 400000: got 25000 trades (total query so far: 425000, mismatches: 0, boundary excluded: 205)
+  Query offset 425000: got 25000 trades (total query so far: 450000, mismatches: 0, boundary excluded: 205)
+  Query offset 450000: got 25000 trades (total query so far: 475000, mismatches: 0, boundary excluded: 205)
+  Query offset 475000: got 25000 trades (total query so far: 500000, mismatches: 0, boundary excluded: 205)
+  Query offset 500000: got 25000 trades (total query so far: 525000, mismatches: 0, boundary excluded: 205)
+  Query offset 525000: got 25000 trades (total query so far: 550000, mismatches: 0, boundary excluded: 205)
+  Query offset 550000: got 25000 trades (total query so far: 575000, mismatches: 0, boundary excluded: 205)
+  Query offset 575000: got 25000 trades (total query so far: 600000, mismatches: 0, boundary excluded: 205)
+  Query offset 600000: got 25000 trades (total query so far: 625000, mismatches: 0, boundary excluded: 205)
+  Query offset 625000: got 25000 trades (total query so far: 650000, mismatches: 0, boundary excluded: 205)
+  Query offset 650000: got 25000 trades (total query so far: 675000, mismatches: 0, boundary excluded: 205)
+  Query offset 675000: got 25000 trades (total query so far: 700000, mismatches: 0, boundary excluded: 205)
+  Query offset 700000: got 25000 trades (total query so far: 725000, mismatches: 0, boundary excluded: 205)
+  Query offset 725000: got 25000 trades (total query so far: 750000, mismatches: 0, boundary excluded: 205)
+  Query offset 750000: got 25000 trades (total query so far: 775000, mismatches: 0, boundary excluded: 205)
+  Query offset 775000: got 25000 trades (total query so far: 800000, mismatches: 0, boundary excluded: 205)
+  Query offset 800000: got 25000 trades (total query so far: 825000, mismatches: 0, boundary excluded: 205)
+  Query offset 825000: got 25000 trades (total query so far: 850000, mismatches: 0, boundary excluded: 205)
+  Query offset 850000: got 25000 trades (total query so far: 875000, mismatches: 0, boundary excluded: 205)
+  Query offset 875000: got 25000 trades (total query so far: 900000, mismatches: 0, boundary excluded: 205)
+  Query offset 900000: got 25000 trades (total query so far: 925000, mismatches: 0, boundary excluded: 205)
+  Query offset 925000: got 4718 trades (total query so far: 929718, mismatches: 0, boundary excluded: 388)
+
+============================================================
+FINAL STATS
+============================================================
+Stream wall-clock duration: 1834.6 seconds
+Stream time range (UTC): since = 2026-02-13T10:47:33Z, till = 2026-02-13T11:18:05Z
+Count of trades received in stream: 929330
+Count of trades from query in same time range: 929718
+Excluded as boundary (opening/closing timestamp, random order): 388
+Mismatches (in query but NOT in subscription): 0
+Missing share: 0.00% of query trades were not in stream
+Query trades written to: query_trades.csv
+Mismatch rows written to: mismatches.csv
+============================================================

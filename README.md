@@ -1,6 +1,6 @@
-# Solana DEXTrades Stream vs Query Checker
+# Bitquery Solana DEX Trades Stream Test
 
-Use this when a customer reports that the **Bitquery Solana DEXTrades subscription is missing trades**. The script records trades from the live stream, then compares them to the same time range fetched via the GraphQL query API and reports any gaps.
+A small script to **test whether the Bitquery Solana DEX Trades stream is running fine without dropping any trades or not**. It records trades from the live subscription, then compares them to the same time range fetched via the GraphQL query API and reports any gaps.
 
 ## What it does
 
