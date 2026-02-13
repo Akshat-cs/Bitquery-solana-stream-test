@@ -6,3 +6,7 @@ __pycache__/
 venv/
 .env.local
 *.log
+
+
+
+.gitignore
